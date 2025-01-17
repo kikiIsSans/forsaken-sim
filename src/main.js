@@ -1,11 +1,11 @@
 const tickRate = 1000 / 30;
 let score = 0;
 
-let noob = new Building('Noob', 0.1, 15,'buyNoob');
-let elliot = new Building('Elliot', 1, 100,'buyElliot');
-let twoTime = new Building('Two Time', 3, 160,'buyTwoTime');
-let guest = new Building('Guest', 5, 300,'buyGuest');
-let chance = new Building('Chance', 10, 1000,'buyChance');
+let noob = new Building('Noob', 0.1, 15, 'buyNoob');
+let elliot = new Building('Elliot', 1, 100, 'buyElliot');
+let twoTime = new Building('Two Time', 3, 160, 'buyTwoTime');
+let guest = new Building('Guest', 5, 300, 'buyGuest');
+let chance = new Building('Chance', 10, 1000, 'buyChance');
 
 
 function incScore() {
