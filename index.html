@@ -1,34 +1,69 @@
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/style.css">
         <script src="src/building.js"></script>
+        <script src="src/upgrade.js"></script>
+        <script src="src/bloxyCola.js"></script>
         <script src="src/main.js"></script>
         <title>Forsaken Simulator</title>
     </head>
     <body>
+        <header>
         <h1>Forsaken Simulator</h1>
-        
+            <h2>
+                Click to gain Money to hire survivors and upgrades.
+            </h2>
+        </header>
 
-        <h2>It's a game about defending against the killers with the money you get.</h2>
-
-        <h3>Score: <span class="score" id="score">0</span></h3>
+        <div class="outer">
+            <div class="click">
+        <h3>Money: <span class="score" id="score">0</span></h3>
 
         <button type="button" onclick="scorePlusPlus()">Click Me!</button>
+        </div>
 
+        <div class="store">
+            <div class="shop">
+                <div class="store-title">
         <h4>Shop:</h4>
+    </div>
 
-        <button type="button" id="buyNoob" onclick="noob.purchase()">Buy Noob</button>
-        <button type="button" id="buyElliot" onclick="elliot.purchase()">Buy Elliot</button>
-        <button type="button" id="buyTwoTime" onclick="twoTime.purchase()">Buy Two Time</button>
-        <button type="button" id="buyGuest" onclick="guest.purchase()">Buy Guest</button>
-        <button type="button" id="buyChance" onclick="chance.purchase()">Buy Chance</button>
-        
-        <!-- Add more building button here-->
-        
+        <button class="button" type="button" id="buyNoob" onclick="noob.purchase()">
+            Buy Noob
+        </button>
+
+        <button class="button" type="button" id="buyElliot" onclick="elliot.purchase()">
+            Buy Elliot
+        </button>
+
+        <button class="button" type="button" id="buyGuest" onclick="guest.purchase()">
+            Buy Guest
+        </button>
+
+        <button class="button" type="button" id="buyChance" onclick="chance.purchase()">
+            Buy Chance
+        </button>
+        <!-- Add more building buttons here -->
+
+    </div>
+    <div class="upgrades">
+        <div class="store-title">
         <h4>Upgrades:</h4>
+    </div>
 
-        <button type="button" id="buyCola" onclick="cola.purchase()">Buy Bloxy Cola</button>
+        <button
+        class="button"
+            type="button"
+            id="buyBloxyColaI"
+            onclick="bloxyCola1.purchase()"
+        >
+                        Buy Bloxy Cola
+                    </button>
+                </div>
+            </div>
+        </div>
     </body>
-    </html>
+</html>
