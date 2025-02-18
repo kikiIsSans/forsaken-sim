@@ -1,6 +1,6 @@
 body {
     margin: 0 15% 0 15%;
-    background-image: url(/media/imgs/bg.jpg);
+    background-image: url(../media/imgs/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
